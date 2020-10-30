@@ -2,7 +2,7 @@
                             
                             {
 								"name": "AllowGithubRepo",
-								"priority": 102,
+								"priority": 202,
 								"ruleCollectionType": "FirewallPolicyFilterRuleCollection",
 								"action": {
 									"type": "Allow"
