@@ -73,7 +73,30 @@
 											"XX.XX.XX.XX/YY"
 										],
 										"terminateTLS":true 
-									}
+									},
+									{ 
+										"ruleType": "ApplicationRule", 
+										"name": "AllowWVDTag", 
+										"protocols":[ 
+											{ 
+												"protocolType":"Https", 
+												"port":443 
+											},
+											{ 
+												"protocolType":"Http", 
+												"port":80 
+											}
+										],
+                                        "fqdnTags": [
+                                            "WindowsVirtualDesktop"
+                                        ],
+                                        "targetFqdns": [],
+										"sourceAddresses":[ 
+											"*"
+										],
+                                        "sourceIpGroups": [],
+										"terminateTLS":false 
+                                    }
 								]
 							},
                             {
