@@ -1,0 +1,31 @@
+                            {
+								"name": "AllowAllWeb",
+								"priority": 200,
+								"ruleCollectionType": "FirewallPolicyFilterRuleCollection",
+								"action": {
+									"type": "Allow"
+								},
+								"rules": [
+									{ 
+										"ruleType": "ApplicationRule", 
+										"name": "AllowAllWeb", 
+										"protocols":[ 
+											{ 
+												"protocolType":"Https", 
+												"port":443 
+											},
+											{
+												"protocolType": "Http",
+												"port": 80
+											}
+										],
+										"targetUrls":[ 
+											"*"
+										],
+										"sourceAddresses":[ 
+											"*"
+										],
+										"terminateTLS":true 
+									}
+								]
+							}
