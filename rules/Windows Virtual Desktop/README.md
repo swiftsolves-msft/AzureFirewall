@@ -8,7 +8,7 @@ Further information on Azure Firewall and WVD can be found here: https://docs.mi
 
 2.	Open Event viewer, then go to Windows logs > Application > WVD-Agent and look for Event ID 3701.
 
-3.	Whitelist the URLs that you find under Event ID 3701. The URLs under Event ID 3701 are region-specific. You'll need to repeat the unblocking process with the relevant URLs for each region you want to deploy your virtual machines in.
+3.	Whitelist the FQDNs for ServiceBus, Blob, Table, and Queue that you find under Event ID 3701. The FQDNs under Event ID 3701 are region-specific. You'll need to repeat the unblocking process with the relevant URLs for each region you want to deploy your virtual machines in. UNIQUESTRING is to be replace by those FQDNs discoved by above process.
 
 Within the sample rule update XX.XX.XX.XX/YY << Is your WVD Host Pool Subnet
 
