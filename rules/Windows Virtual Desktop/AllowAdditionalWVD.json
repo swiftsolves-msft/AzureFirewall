@@ -16,7 +16,7 @@
 											}
 										],
 										"targetUrls":[ 
-											"*xt.blob.core.windows.net/*"
+											"UNIQUESTRING.blob.core.windows.net/*"
 										],
 										"sourceAddresses":[ 
 											"XX.XX.XX.XX/YY"
@@ -33,7 +33,7 @@
 											}
 										],
 										"targetUrls":[ 
-											"*eh.servicebus.windows.net/*"
+											"UNIQUESTRING.servicebus.windows.net/*"
 										],
 										"sourceAddresses":[ 
 											"XX.XX.XX.XX/YY"
@@ -50,7 +50,24 @@
 											}
 										],
 										"targetUrls":[ 
-											"*xt.table.core.windows.net/*"
+											"UNIQUESTRING.table.core.windows.net/*"
+										],
+										"sourceAddresses":[ 
+											"XX.XX.XX.XX/YY"
+										],
+										"terminateTLS":true 
+									},
+									{ 
+										"ruleType": "ApplicationRule", 
+										"name": "AllowWVDQueue", 
+										"protocols":[ 
+											{ 
+												"protocolType":"Https", 
+												"port":443 
+											}
+										],
+										"targetUrls":[ 
+											"UNIQUESTRING.queue.core.windows.net/*"
 										],
 										"sourceAddresses":[ 
 											"XX.XX.XX.XX/YY"
@@ -75,7 +92,7 @@
                                         ],
                                         "targetFqdns": [],
 										"sourceAddresses":[ 
-											"*"
+											"XX.XX.XX.XX/YY"
 										],
                                         "sourceIpGroups": [],
 										"terminateTLS":false 
@@ -98,7 +115,7 @@
 											"UDP"
                                         ],
                                         "sourceAddresses": [
-                                            "*"
+                                            "XX.XX.XX.XX/YY"
                                         ],
                                         "destinationAddresses": [
 											"ZZ.ZZ.ZZ.ZZ"
