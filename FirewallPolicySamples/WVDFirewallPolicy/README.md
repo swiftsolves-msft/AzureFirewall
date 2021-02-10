@@ -10,6 +10,10 @@ This WVD Firewall policy can be deployed and used with Azure Firewall Premium to
 <img src="https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazuregov.png"/>
 </a>
 
-Use the following format for the Array data for 
+Use the following format for the Array data for  WVDServiceBusURLs, WVDBlobURLs, WVDTableURLs, WVDQueueURLs
 
 ```["gsmUNIQUESTRINGeh.servicebus.windows.net/*","gsmUNIQUESTRINGeh.servicebus.windows.net/*"]```
+
+Use the following format for the Array data for AD_DNSServers
+
+```["xx.xx.xx.xx","yy.yy.yy.yy"]```
