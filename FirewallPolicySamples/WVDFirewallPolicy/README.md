@@ -21,4 +21,4 @@ Use the following format for the Array data for AD_DNSServers
 
 ```["xx.xx.xx.xx","yy.yy.yy.yy"]```
 
-![New app](https://github.com/swiftsolves-msft/AzureFirewall/blob/main/FirewallPolicySamples/WVDFirewallPolicy/images/addcspic.png?raw=true)
+![New app](https://github.com/swiftsolves-msft/AzureFirewall/blob/main/FirewallPolicySamples/WVDFirewallPolicy/images/addnspic.png?raw=true)
