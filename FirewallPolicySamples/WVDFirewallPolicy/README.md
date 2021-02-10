@@ -12,4 +12,4 @@ This WVD Firewall policy can be deployed and used with Azure Firewall Premium to
 
 Use the following format for the Array data for 
 
-["gsmUNIQUESTRINGeh.servicebus.windows.net/*","gsmUNIQUESTRINGeh.servicebus.windows.net/*"]
+```["gsmUNIQUESTRINGeh.servicebus.windows.net/*","gsmUNIQUESTRINGeh.servicebus.windows.net/*"]```
