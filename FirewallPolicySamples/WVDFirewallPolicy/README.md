@@ -14,7 +14,8 @@ This WVD Firewall policy can be deployed and used with Azure Firewall Premium to
 Use the following format for the Array data for WVDServiceBusURLs, WVDBlobURLs, WVDTableURLs, WVDQueueURLs
 
 ```["gsmUNIQUESTRINGeh.servicebus.windows.net/*","gsmUNIQUESTRINGeh.servicebus.windows.net/*"]```
-<img src="https://github.com/swiftsolves-msft/AzureFirewall/blob/master/FirewallPolicySamples/WVDFirewallPolicy/images/urls.png"/>
+
+<img src="https://github.com/swiftsolves-msft/AzureFirewall/blob/main/FirewallPolicySamples/WVDFirewallPolicy/images/urls.png"/>
 
 Use the following format for the Array data for AD_DNSServers
 
