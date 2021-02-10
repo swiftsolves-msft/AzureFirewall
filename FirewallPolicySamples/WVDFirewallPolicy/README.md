@@ -10,10 +10,15 @@ This WVD Firewall policy can be deployed and used with Azure Firewall Premium to
 <img src="https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazuregov.png"/>
 </a>
 
-Use the following format for the Array data for  WVDServiceBusURLs, WVDBlobURLs, WVDTableURLs, WVDQueueURLs
+
+Use the following format for the Array data for WVDServiceBusURLs, WVDBlobURLs, WVDTableURLs, WVDQueueURLs
 
 ```["gsmUNIQUESTRINGeh.servicebus.windows.net/*","gsmUNIQUESTRINGeh.servicebus.windows.net/*"]```
+
+![New app](https://github.com/swiftsolves-msft/Public/blob/master/AzureFirewall/FirewallPolicySamples/WVDFirewallPolicy/images/urls.png?raw=true)
 
 Use the following format for the Array data for AD_DNSServers
 
 ```["xx.xx.xx.xx","yy.yy.yy.yy"]```
+
+![New app](https://github.com/swiftsolves-msft/Public/blob/master/AzureFirewall/FirewallPolicySamples/WVDFirewallPolicy/images/addnspic.png?raw=true)
