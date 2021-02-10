@@ -15,7 +15,7 @@ Use the following format for the Array data for WVDServiceBusURLs, WVDBlobURLs, 
 
 ```["gsmUNIQUESTRINGeh.servicebus.windows.net/*","gsmUNIQUESTRINGeh.servicebus.windows.net/*"]```
 
-![New app](https://github.com/swiftsolves-msft/AzureFirewall/blob/master/FirewallPolicySamples/WVDFirewallPolicy/images/urls.png)
+<img src="https://github.com/swiftsolves-msft/AzureFirewall/blob/master/FirewallPolicySamples/WVDFirewallPolicy/images/urls.png"/>
 
 Use the following format for the Array data for AD_DNSServers
 
