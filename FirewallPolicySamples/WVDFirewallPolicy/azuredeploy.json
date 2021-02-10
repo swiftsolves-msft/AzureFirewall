@@ -16,7 +16,6 @@
             "metadata": {
                 "description": "Array of AD DNS Servers the WVD Host Pool can communicate over DNS xx.xx.xx.xx "
             },
-            "defaultValue": "",
             "type": "Array"
         },
         "ThreatIntelMode": {
@@ -35,28 +34,24 @@
             "metadata": {
                 "description": "Array of The WVD ServiceBus URLs this must be looked up as it is unique per instance EX. gsmUNIQUESTRINGeh.servicebus.windows.net/* "
             },
-            "defaultValue": "",
             "type": "Array"
         },
         "WVDBlobURLs": {
             "metadata": {
                 "description": "Array of The WVD Blob URLs this must be looked up as it is unique per instance EX. gsmUNIQUESTRINGxt.blob.core.windows.net/* "
             },
-            "defaultValue": "",
             "type": "Array"
         },
         "WVDTableURLs": {
             "metadata": {
                 "description": "Array of The WVD Table URLs this must be looked up as it is unique per instance EX. gsmUNIQUESTRINGxt.blob.core.windows.net/* "
             },
-            "defaultValue": "",
             "type": "Array"
         },
         "WVDQueueURLs": {
             "metadata": {
                 "description": "Array of The WVD Queue URLs this must be looked up as it is unique per instance EX. gsmUNIQUESTRINGxt.blob.core.windows.net/* "
             },
-            "defaultValue": "",
             "type": "Array"
         }
     },
