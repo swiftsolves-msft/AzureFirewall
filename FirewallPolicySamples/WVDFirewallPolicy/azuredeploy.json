@@ -110,7 +110,7 @@
                                 ],
                                 "targetFqdns": [],
                                 "targetUrls": [],
-                                "terminateTLS": true,
+                                "terminateTLS": false,
                                 "sourceAddresses": [
                                     "[parameters('WVDHostPoolSubnetCidr')]"
                                 ],
@@ -129,7 +129,7 @@
                                 "fqdnTags": [],
                                 "targetFqdns": [],
                                 "targetUrls": "[parameters('WVDServiceBusURLs')]",
-                                "terminateTLS": true,
+                                "terminateTLS": false,
                                 "sourceAddresses": [
                                     "[parameters('WVDHostPoolSubnetCidr')]"
                                 ],
@@ -148,7 +148,7 @@
                                 "fqdnTags": [],
                                 "targetFqdns": [],
                                 "targetUrls": "[parameters('WVDBlobURLs')]",
-                                "terminateTLS": true,
+                                "terminateTLS": false,
                                 "sourceAddresses": [
                                     "[parameters('WVDHostPoolSubnetCidr')]"
                                 ],
@@ -167,7 +167,7 @@
                                 "fqdnTags": [],
                                 "targetFqdns": [],
                                 "targetUrls": "[parameters('WVDTableURLs')]",
-                                "terminateTLS": true,
+                                "terminateTLS": false,
                                 "sourceAddresses": [
                                     "[parameters('WVDHostPoolSubnetCidr')]"
                                 ],
@@ -186,7 +186,7 @@
                                 "fqdnTags": [],
                                 "targetFqdns": [],
                                 "targetUrls": "[parameters('WVDQueueURLs')]",
-                                "terminateTLS": true,
+                                "terminateTLS": false,
                                 "sourceAddresses": [
                                     "[parameters('WVDHostPoolSubnetCidr')]"
                                 ],
