@@ -44,6 +44,27 @@
             ],
             "type": "String"
         },
+        "keyVaultName": {
+            "metadata": {
+                "description": "Keyvault name that is storing the CA Certificate as a Secret for Azure Firewall TLS Inspection"
+            },
+            "defaultValue": "",
+            "type": "String"
+        },
+        "keyVaultCASecretName": {
+            "metadata": {
+                "description": "Secret name for CA Certificate used in Azure Firewall TLS Inspection"
+            },
+            "defaultValue": "cacert",
+            "type": "String"
+        },
+        "userAssignedIdentityId": {
+            "metadata": {
+                "description": "The ResourceID of the User Assigned Identity that was generated for access to KeyVault - cacert - secret"
+            },
+            "defaultValue": "/subscriptions/{SUBID}/resourceGroups/{RGNAME}/providers/Microsoft.ManagedIdentity/userAssignedIdentities/{IDENTITYNAME}",
+            "type": "String"
+        },
         "WVDServiceBusURLs": {
             "metadata": {
                 "description": "Array of The WVD ServiceBus URLs this must be looked up as it is unique per instance EX. gsmUNIQUESTRINGeh.servicebus.windows.net/* "
@@ -92,6 +113,12 @@
             "apiVersion": "2020-05-01",
             "name": "[parameters('firewallPolicyName')]",
             "location": "[resourceGroup().location]",
+            "identity": {
+                "type": "UserAssigned",
+                "userAssignedIdentities": {
+                    "[parameters('userAssignedIdentityId')]": {}
+                }
+            },
             "properties": {
                 "sku": {"tier": "Premium"},
                 "threatIntelMode": "[parameters('ThreatIntelMode')]",
@@ -100,7 +127,8 @@
                 },
                 "transportSecurity": {
                     "certificateAuthority": {
-                        "name": "cacert"
+                        "name": "[parameters('keyVaultCASecretName')]",
+                        "keyVaultSecretId": "[concat(reference(resourceId('Microsoft.KeyVault/vaults', parameters('keyVaultName')), '2019-09-01').vaultUri, 'secrets/', parameters('keyVaultCASecretName'))]"
                     }
                 },
             	"intrusionDetection": {
