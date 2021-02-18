@@ -98,6 +98,11 @@
                 "threatIntelWhitelist": {
                     "ipAddresses": []
                 },
+                "transportSecurity": {
+                    "certificateAuthority": {
+                        "name": "cacert"
+                    }
+                },
             	"intrusionDetection": {
 					"mode": "[parameters('IDPSMode')]",
 					"configuration": {
